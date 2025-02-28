@@ -1,8 +1,20 @@
-<footer class="bg-[#fafafa]">
-  <div>
-    <a :tel="5559257514">55 5925 7514</a>
-    <a :email="contact@sinntec.com.mx">contact@sinntec.com.mx</a>
-    <a href="#">Polanco V Sección, CDMX</a>
-  </div>
-  <p>© Copyright 2022. Designed by Sinntec Innovación Tecnológica S.A. de C.V.   Aviso de Privacidad |Términos y Condiciones</p>
+<footer class="footer footer-horizontal footer-center bg-[#fafafa] text-base-content rounded p-10">
+  <nav class="grid grid-flow-col gap-4">
+    <a :tel="5559257514" class="font-normal text-base">
+      55 5925 7514
+    </a>
+    <a :email="contact@sinntec.com.mx" class="font-normal text-base">
+      contact@sinntec.com.mx
+    </a>
+    <a href="#" class="font-normal text-base">
+      Polanco V Sección, CDMX
+    </a>
+  </nav>
+  <aside>
+    <p class="font-normal text-base">
+      © Copyright {new Date().getFullYear()}. 
+      Designed by Sinntec Innovación Tecnológica S.A. de C.V.   
+      Aviso de Privacidad |Términos y Condiciones
+    </p>
+  </aside>
 </footer>
