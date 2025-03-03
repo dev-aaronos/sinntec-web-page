@@ -1,18 +1,32 @@
-<footer class="footer footer-horizontal footer-center bg-[#fafafa] text-base-content rounded p-10 fixed inset-x-0 bottom-0">
-  <nav class="grid grid-flow-col gap-4">
-    <a :tel="5559257514" class="font-normal text-base">
-      55 5925 7514
-    </a>
-    <a :email="contact@sinntec.com.mx" class="font-normal text-base">
-      contact@sinntec.com.mx
-    </a>
-    <a href="#" class="font-normal text-base">
-      Polanco V Sección, CDMX
-    </a>
+---
+import call from '@assets/footer/call.svg';
+import mail from '@assets/footer/mail.svg';
+import locationOn from '@assets/footer/locationOn.svg';
+---
+<footer class="footer footer-center flex flex-col bg-[#fafafa] text-base-content p-4 abosolute inset-x-0 bottom-0">
+  <nav class="flex flex-wrap justify-center gap-x-4">
+    <div class="flex justify-around gap-x-1.5">
+      <img class="h-4 my-auto" src={ call.src } alt="Call Sinntec">
+      <a :tel="5559257514" class="prose text-pretty text-xl font-normal">
+        55 5925 7514
+      </a>
+    </div>
+    <div class="flex justify-around gap-x-1.5">
+      <img class="h-4 my-auto" src={ mail.src } alt="Mail Sinntec">
+      <a :email="contact@sinntec.com.mx" class="prose text-pretty font-normal">
+        contact@sinntec.com.mx
+      </a>
+    </div>
+    <div class="flex justify-around gap-x-1.5">
+      <img class="h-4 my-auto" src={ locationOn.src } alt="Location Sinntec">
+      <a href="#" class="prose text-pretty font-normal">
+        Polanco V Sección, CDMX
+      </a>
+    </div>
   </nav>
-  <aside>
-    <p class="font-normal text-base">
-      © Copyright {new Date().getFullYear()}. 
+  <aside class="">
+    <p class="prose text-pretty font-normal text-base">
+      © Copyright { new Date().getFullYear() }. 
       Designed by Sinntec Innovación Tecnológica S.A. de C.V.   
       Aviso de Privacidad |Términos y Condiciones
     </p>

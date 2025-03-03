@@ -1,0 +1,31 @@
+---
+const products = [
+  { name: 'Desarrollo de apps' },
+  { name: 'Desarrollo de sistemas web y escritorio' },
+  { name: 'Servidores VPS' },
+  { name: 'Diseño UX/UI + Desarrollo' },
+];
+---
+<section class="px-6 py-2.5 lg:px-8">
+  <div class="flex flex-col">
+    <h2 class="prose text-pretty text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary">
+      Sobre nosotros
+    </h2>
+    <h2 class="prose text-pretty text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">
+      Tu equipo tecnológico a largo plazo
+    </h2>
+  </div>
+  <div class="flex flex-wrap gap-1.5">
+    {
+      products.map(item => {
+        return ( 
+          <div class="card">
+            <div class="card-body">
+              { item.name }
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+</section>
